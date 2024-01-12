@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Meta tags for character set and responsive design -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Favicon for the site -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <!-- Title of the webpage -->
+  <title>Frontend Mentor | Blog preview card</title>
+
+  <!-- Internal styles for the webpage -->
+  <!-- Feel free to customize these styles based on your design preferences -->
+  <style>
+    /* Body styling for background and layout */
+    body {
+      background-color: #f5d04e;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    /* Attribution text styling */
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    /* Container styling for the blog card */
+    .container {
+      position: absolute;
+      width: 360px;
+      height: 500px;
+      background-color: white;
+      border-radius: 10px;
+      border: 1px solid black;
+      z-index: 2;
+      box-shadow: 10px 10px;
+    }
+
+    /* Image styling within the card */
+    .container .image {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin: 10px;
+      border-radius: 10px;
+    }
+
+    /* Button styling */
+    button {
+      background-color: #f5d04e;
+      border: none;
+      border-radius: 3px;
+      padding: 5px;
+      margin: 0px 10px;
+      font-weight: 600;
+    }
+
+    /* Styling for the publish date */
+    .PublishDate {
+      font-weight: 400;
+      margin-left: 10px;
+    }
+
+    /* Styling for the blog post title */
+    h3 {
+      margin-left: 10px;
+      color: black;
+      cursor: pointer;
+    }
+
+    /* Hover effect on the blog post title */
+    h3:hover {
+      color: #f5d04e;
+    }
+
+    /* Styling for the box content */
+    .BoxContent {
+      margin-left: 10px;
+      color: darkgrey;
+    }
+
+    /* Styling for the author container */
+    .authorContainer {
+      display: flex;
+      align-items: center;
+      margin-left: 10px;
+      margin-top: 20px;
+    }
+
+    /* Styling for the author's image */
+    .authorContainer img {
+      width: 40px;
+    }
+
+    /* Styling for the author's name */
+    .authorContainer .author {
+      margin-left: 10px;
+      font-weight: 600;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Blog card container -->
+  <div class="container">
+    <!-- SVG image for the card -->
+    <svg class="image" xmlns="http://www.w3.org/2000/svg" width="336" height="201" fill="none" viewBox="0 0 336 201">
+      <!-- Group with clip-path for SVG styling -->
+      <g clip-path="url(#a)">
+        <!-- Background path with yellow color -->
+        <path fill="#F4D04E" d="M0 .5h336v200H0z" />
+        <!-- Rotated rectangle with white color -->
+        <rect width="139" height="95" x="87.996" y="77.729" fill="#fff" rx="47.5"
+          transform="rotate(-45 87.996 77.729)" />
+        <!-- Rotated rectangle with black color -->
+        <rect width="139" height="95" x="54.055" y="77.729" fill="#111" rx="47.5"
+          transform="rotate(-45 54.055 77.729)" />
+        <!-- Path with black color -->
+        <path fill="#111" d="M234.864 209.036 451.4-7.5l67.175 67.175-216.536 216.536z" />
+        <!-- Rotated rectangle with white color -->
+        <rect width="139" height="95" x="20.114" y="77.729" fill="#fff" rx="47.5"
+          transform="rotate(-45 20.114 77.729)" />
+        <!-- Rotated rectangle with black color -->
+        <rect width="204.19" height="270.554" fill="#111" rx="102.095"
+          transform="scale(-1 1) rotate(45 -103.887 14.564)" />
+        <!-- Path with white color and stroke -->
+        <path stroke="#fff" stroke-width="3"
+          d="m6.69-357.5 135.583 135.727c12.481 12.494 12.481 32.737 0 45.231L-45.544 11.475c-12.481 12.494-12.481 32.737 0 45.23L107.088 209.5" />
+        <!-- Path with black color and stroke -->
+        <path stroke="#111" stroke-width="3"
+          d="M69.965 71.719v23.334h23.334M136.079 52.273V28.94h-23.334M102.845 38.838v46.67M210.364-37.5l60.873 60.873c12.497 12.496 12.497 32.758 0 45.254l-77.745 77.746c-12.497 12.496-12.497 32.758 0 45.254l69.872 69.873" />
+        <!-- Path with black color and stroke -->
+        <path stroke="#111" stroke-width="3"
+          d="m253.339 149.574-12.144 12.145 14.256 14.257v12.672h12.673l13.729 13.729 12.145-12.145M278.685 124.228l-12.145 12.145 14.257 14.257v12.673h12.673l13.729 13.729 12.145-12.145M304.031 98.883l-12.145 12.144 14.257 14.257v12.673h12.673l13.729 13.729 12.144-12.145M329.376 73.537l-12.145 12.145 14.257 14.257v12.672h12.673l13.729 13.729 12.145-12.144" />
+        <!-- Path with white color and stroke -->
+        <path stroke="#fff" stroke-width="5"
+          d="m354.722 48.191-12.145 12.145 14.257 14.257v12.673h12.673l13.729 13.729 12.145-12.145" />
+        <!-- Mask for the SVG image -->
+        <mask id="b" width="285" height="285" x="234" y="-8" maskUnits="userSpaceOnUse" style="mask-type:alpha">
+          <path fill="#111" d="M234.864 209.036 451.4-7.5l67.175 67.175-216.536 216.536z" />
+        </mask>
+        <!-- Group with white color stroke and mask -->
+        <g stroke="#fff" mask="url(#b)">
+          <path stroke-width="3"
+            d="m253.339 149.574-12.144 12.145 14.256 14.257v12.672h12.673l13.729 13.729 12.145-12.145M278.685 124.228l-12.145 12.145 14.257 14.257v12.673h12.673l13.729 13.729 12.145-12.145M304.031 98.883l-12.145 12.144 14.257 14.257v12.673h12.673l13.729 13.729 12.144-12.145M329.376 73.537l-12.145 12.145 14.257 14.257v12.672h12.673l13.729 13.729 12.145-12.145" />
+          <path stroke-width="5"
+            d="m354.722 48.191-12.145 12.145 14.257 14.257v12.673h12.673l13.729 13.729 12.145-12.145" />
+        </g>
+      </g>
+      <!-- Definitions for clipPath -->
+      <defs>
+        <clipPath id="a">
+          <path fill="#fff" d="M0 .5h336v200H0z" />
+        </clipPath>
+      </defs>
+    </svg>
+
+    <!-- Button for blog category -->
+    <button>Learning</button>
+
+    <!-- Paragraph for the publish date -->
+    <p class="PublishDate">Published 21 Dec 2023</p>
+
+    <!-- Heading for the blog post title -->
+    <h3>HTML & CSS foundations</h3>
+
+    <!-- Paragraph for the content of the blog post -->
+    <p class="BoxContent">These languages are the backbone of every website, defining structure, content, and
+      presentation.</p>
+
+    <!-- Container for the author information -->
+    <div class="authorContainer">
+      <!-- Image for the author -->
+      <img src="./assets/images/image-avatar.webp" alt="" srcset="">
+      <!-- Paragraph for the author's name -->
+      <p class="author">Greg Hooper</p>
+    </div>
+  </div>
+
+  <!-- Attribution text for the challenge and coder information -->
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://www.instagram.com/ghostcode_dynamics/">Your Name Here</a>.
+  </div>
+</body>
+
+</html>
